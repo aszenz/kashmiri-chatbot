@@ -1,8 +1,8 @@
-#!/usr/bin/env -S uvx marimo@0.11.2 edit --sandbox
+#!/usr/bin/env -S uvx marimo@0.11.5 edit --sandbox
 # /// script
 # requires-python = ">=3.13"
 # dependencies = [
-#     "marimo",
+#     "marimo==0.11.5",
 #     "requests==2.32.3",
 # ]
 # ///
@@ -10,7 +10,12 @@
 import marimo
 
 __generated_with = "0.11.5"
-app = marimo.App(width="full")
+app = marimo.App(
+    width="compact",
+    app_title="Kashmiri Chatbot",
+    css_file=str(marimo.notebook_location() / "public" / "custom.css"),
+    html_head_file=str(marimo.notebook_location() / "public" / "head.html")
+)
 
 
 @app.cell
@@ -65,17 +70,15 @@ def _(mo):
     return
 
 
-@app.cell
-def _(mo):
-    mo.md(
-        """
-        ## Application
-        Enter the credentials for Azure Translator and OpenAI Chat API, and start chatting with the chatbot in Kashmiri language.
+app._unparsable_cell(
+    r"""
+    ## Application
+    Enter the credentials for Azure Translator and OpenAI Chat API, and start chatting with the chatbot in Kashmiri language.
 
-        _Note you can write in both Perso-Arabic and Roman(english alphabets) script._
-        """
-    )
-    return
+    _Note you can write in both Perso-Arabic and Roman(english alphabets) script._
+    """,
+    name="_"
+)
 
 
 @app.cell
