@@ -173,6 +173,10 @@ def _(
         _Your credentials won't be stored or shared with anyone, they are only used in memory to run the chatbot._
 
         You can also contact me at [asrar.nahvi@gmail.com](mailto:asrar.nahvi@gmail.com) for temporary credentials in case you want to test out the chatbot.
+
+        _To see app code click on the three dot horizontal menu on the top right corner of the app._
+
+        Code is hosted on GitHub at https://github.com/aszenz/kashmiri-chatbot
         """)
     )
     def kashir_gpt(msgs: list, config) -> object:

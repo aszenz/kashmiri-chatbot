@@ -2,6 +2,8 @@
 
 Python notebook to showcase developing Kashmiri language chatbot.
 
+Available at [Kashmiri chatbot](https://aszenz.github.io/kashmiri-chatbot/)
+
 ## Developing
 
 Make sure you are using a Linux machine
