@@ -70,15 +70,17 @@ def _(mo):
     return
 
 
-app._unparsable_cell(
-    r"""
-    ## Application
-    Enter the credentials for Azure Translator and OpenAI Chat API, and start chatting with the chatbot in Kashmiri language.
+@app.cell
+def _(mo):
+    mo.md(
+        """
+        ## Application
+        Enter the credentials for Azure Translator and OpenAI Chat API, and start chatting with the chatbot in Kashmiri language.
 
-    _Note you can write in both Perso-Arabic and Roman(english alphabets) script._
-    """,
-    name="_"
-)
+        _Note you can write in both Perso-Arabic and Roman(english alphabets) script._
+        """
+    )
+    return
 
 
 @app.cell
