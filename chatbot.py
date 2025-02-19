@@ -1,15 +1,15 @@
-#!/usr/bin/env -S uvx marimo@0.11.5 edit --sandbox
+#!/usr/bin/env -S uvx marimo@0.11.7 edit --sandbox
 # /// script
 # requires-python = ">=3.13"
 # dependencies = [
-#     "marimo==0.11.5",
+#     "marimo==0.11.7",
 #     "requests==2.32.3",
 # ]
 # ///
 
 import marimo
 
-__generated_with = "0.11.5"
+__generated_with = "0.11.7"
 app = marimo.App(
     width="compact",
     app_title="Kashmiri Chatbot",

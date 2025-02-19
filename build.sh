@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-uvx marimo export html-wasm chatbot.py  --mode run -o dist
+uvx marimo@0.11.7 export html-wasm chatbot.py  --mode run -o dist
